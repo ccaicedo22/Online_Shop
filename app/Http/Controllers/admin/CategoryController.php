@@ -26,7 +26,7 @@ class CategoryController extends Controller
 
         } else {
             return response()->json([
-                'status' => true,
+                'status' => false,
                 'errors' => $validator->errors()
             ]);
         }
